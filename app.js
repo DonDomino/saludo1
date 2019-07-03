@@ -4,7 +4,7 @@ const app = express();
 app.get('/', (req, res) => {
   let msg = "";
   if(!req.query.nombre){
-    msg = '<h1>Hola desconocido</h1>';
+    msg = '<h1>Hola desconocido!</h1>';
   } else {
     msg = `<h1>Hola ${req.query.nombre}!</h1>`
   }
